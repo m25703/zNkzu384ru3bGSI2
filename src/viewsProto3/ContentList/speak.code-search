@@ -1,0 +1,87 @@
+# Query: speak
+# Flags: CaseSensitive WordMatch
+# ContextLines: 1
+
+24 results - 8 files
+
+all-ll-app-main\src\App.js:
+  109      <HashRouter>
+  110:       <Link to={'/speak'} id="link_speak" className="hide">
+  111:         Speak
+  112        </Link>
+
+  116  
+  117:       <Link to={'/proto2/speak'} id="link_speak_proto2" className="hide">
+  118:         Speak
+  119        </Link>
+
+  143          <Route path={'/*'} element={<Start />} />
+  144:         <Route path={'/speak'} element={<Speak />} />
+  145          <Route path={'/start'} element={<Start />} />
+
+  150          <Route path={'/proto2/*'} element={<Start2 />} />
+  151:         <Route path={'/proto2/speak'} element={<Speak2 />} />
+  152          <Route path={'/proto2/start'} element={<Start2 />} />
+
+  165          <Route path={'/proto3/startlearn'} element={<StartLearn3 />} />
+  166:         <Route path={'/proto3/speak'} element={<Speak3 />} />
+  167  
+
+  170          <Route path={'/proto4/startlearn'} element={<StartLearn4 />} />
+  171:         <Route path={'/proto4/speak'} element={<Speak4 />} />
+  172        </Routes>
+
+all-ll-app-main\src\index.css:
+  501  }
+  502: .text-speak {
+  503    color: rgb(41 157 56);
+
+all-ll-app-main\src\components\AudioRecorderTamil\AudioRecorderTamil.js:
+  146          if (apiResponse['output'][0]['source'] == '') {
+  147:           alert("Sorry I couldn't hear a voice. Could you please speak again?");
+  148          }
+
+all-ll-app-main\src\components\TextToSpeech\TextToSpeech.js:
+  15  
+  16:   const { speak } = useSpeechSynthesis();
+  17    const convertai4bharat = () => {
+
+  69          <br />
+  70:         <button onClick={() => speak({ text: enterText })}>Play</button>
+  71          <br />
+
+all-ll-app-main\src\views\StartLearn\StartLearn.js:
+   96      if (voiceText == '-') {
+   97:       alert("Sorry I couldn't hear a voice. Could you please speak again?");
+   98        setVoiceText('');
+
+  184                  <h4 className="text-play"> Listen</h4>
+  185:                 <h4 className="text-speak">Speak</h4>
+  186                </div>
+
+all-ll-app-main\src\viewsProto2\StartLearn\StartLearn.js:
+  133      if (voiceText == '-') {
+  134:       alert("Sorry I couldn't hear a voice. Could you please speak again?");
+  135        setVoiceText('');
+
+  230                    <h4 className="text-play"> Listen</h4>
+  231:                   <h4 className="text-speak">Speak</h4>
+  232                  </div>
+
+all-ll-app-main\src\viewsProto3\StartLearn\StartLearn.js:
+  144      if (voiceText == '-') {
+  145:       alert("Sorry I couldn't hear a voice. Could you please speak again?");
+  146        setVoiceText('');
+
+  241                    <h4 className="text-play"> Listen</h4>
+  242:                   <h4 className="text-speak">Speak</h4>
+  243                  </div>
+
+all-ll-app-main\src\viewsProto4\StartLearn\StartLearn.js:
+  145      if (voiceText == '-') {
+  146:       alert("Sorry I couldn't hear a voice. Could you please speak again?");
+  147        setVoiceText('');
+
+  222                    <h4 className="text-play"> Listen</h4>
+  223:                   <h4 className="text-speak">Speak</h4>
+  224                  </div>
